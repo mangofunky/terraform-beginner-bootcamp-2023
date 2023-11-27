@@ -10,6 +10,11 @@
     + [Linux Permissions Considerations](#linux-permissions-considerations)
  - [Gitpod Lifecycle](#gitpod-lifecycle)
  - [Working Env Vars](#working-env-vars)
+   * [env command](#env-command)
+   * [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
+   * [Printing Vars](#printing-vars)
+   * [Scoping of Env Vars](#scoping-of-env-vars)
+   * [Persisting Env Vars in Gitpod](#persisting-env-vars-in-gitpod)
 
 
 ## Semantic Versioning
