@@ -175,4 +175,3 @@ If it is succesful you should see a json payload return that looks like this:
 ```
 
 We'll need to generate AWS CLI credits from IAM User in order to the user AWS CLI.
-
