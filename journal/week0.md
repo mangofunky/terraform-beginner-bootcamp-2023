@@ -5,8 +5,11 @@
   * [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
   * [Considerations for Linux Distribution](#considerations-for-linux-distribution)
   * [Refactoring into Bash Scripts](#refactoring-into-bash-scripts)
-  * [Gitpod Lifecycle](#gitpod-lifecycle)
-  * [Working Env Vars](#working-env-vars)
+    + [Shebang Considerations](#shebang-considerations)
+    + [Execution Considerations](#execution-considerations)
+    + [Linux Permissions Considerations](#linux-permissions-considerations)
+ - [Gitpod Lifecycle](#gitpod-lifecycle)
+ - [Working Env Vars](#working-env-vars)
 
 
 ## Semantic Versioning
