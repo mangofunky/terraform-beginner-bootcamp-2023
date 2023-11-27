@@ -6,6 +6,7 @@
   * [Considerations for Linux Distribution](#considerations-for-linux-distribution)
   * [Refactoring into Bash Scripts](#refactoring-into-bash-scripts)
   * [Gitpod Lifecycle](#gitpod-lifecycle)
+  * [Working Env Vars](#working-env-vars)
 
 
 ## Semantic Versioning
