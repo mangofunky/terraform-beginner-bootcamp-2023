@@ -78,7 +78,7 @@ However if we are using a script in .gitpod.yml we need to point the script to a
 
 eg. `source ./bin/install_terraform_cli`
 
-#### Linux Permissions COnsiderations
+#### Linux Permissions Considerations
 
 In order to make our bash scripts executable we need to change linux permissions for the fix to be executable at the user mode.
 
