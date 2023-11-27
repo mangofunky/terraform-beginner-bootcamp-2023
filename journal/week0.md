@@ -5,6 +5,7 @@
   * [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
   * [Considerations for Linux Distribution](#considerations-for-linux-distribution)
   * [Refactoring into Bash Scripts](#refactoring-into-bash-scripts)
+  * [Gitpod Lifecycle](#gitpod-lifecycle)
 
 
 ## Semantic Versioning
