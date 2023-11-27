@@ -20,4 +20,4 @@ sudo apt update -y
 
 sudo apt-get install terraform -y
 
-cs $PROJECT_ROOT
+cd $PROJECT_ROOT
