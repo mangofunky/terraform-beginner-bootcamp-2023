@@ -9,6 +9,13 @@ terraform {
      version = "5.30.0"
     }
   }
+  cloud {
+    organization = "terraform-bootcamp-1337"
+
+    workspaces {
+      name = "terra-house-1"
+    }
+  }
 }
 
 provider "aws" {
@@ -22,7 +29,7 @@ provider "random" {
 
 resource "random_string" "bucket_name" {
   # https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
-  length = 30
+  length = 32
   upper = false
   special = false
 }
