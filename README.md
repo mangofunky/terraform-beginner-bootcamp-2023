@@ -29,11 +29,16 @@
 - [Issues with Terraform Cloud Login and Gitpod Workspace](#issues-with-terraform-cloud-login-and-gitpod-workspace)
 
 ## Semantic Versioning
+=======
+# Terraform Beginner Bootcamp 2023
 
-This project is going utilize semantic versioning for its tagging.
-[semver.org](https://semver.org/)
+![architectural-diagram](https://github.com/omenking/terraform-beginner-bootcamp-2023/assets/7776/ab015431-2d14-4910-aa37-be4807b2b905)
 
-The general format:
+
+
+## Weekly Journals
+- [Week 0 Journal](journal/week0.md)
+- [Week 1 Journal](journal/week1.md)
 
  **MAJOR.MINOR.PATCH**, eg. `1.0.1`
 
@@ -204,3 +209,7 @@ If it is succesful you should see a json payload return that looks like this:
 ```
 
 We'll need to generate AWS CLI credits from IAM User in order to the user AWS CLI.
+=======
+## Extras
+- [Github Markdown TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
+
