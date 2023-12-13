@@ -32,14 +32,14 @@ The general format:
 
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format. 
 
-### Install The Terraform CLI
+## Install The Terraform CLI
 
-#### Considerations with the Terraform CLI changes
+### Considerations with the Terraform CLI changes
 The Terraform CLI installation instructions have changed due to gpg keyring changes. Se needed to refer to the latest install instructions via Terraform Documentation and change the scripting for install.
 
 [Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-#### Considerations for Linux Distribution
+### Considerations for Linux Distribution
 
 ```
 $ cat /etc/os-release
@@ -110,9 +110,9 @@ We need to be careful when using the Init because it will not rerun if we restar
 
 https://www.gitpod.io/docs/configure/workspaces/tasks
 
-### Working Env Vars
+## Working Env Vars
 
-#### env command
+### env command
 
 We can list out all Enviroment Variables (Env Vars) using the `env` command
 
