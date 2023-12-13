@@ -22,7 +22,7 @@ provider "random" {
 
 resource "random_string" "bucket_name" {
   # https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
-  length = 32
+  length = 30
   upper = false
   special = false
 }
