@@ -1,32 +1,3 @@
-terraform {
-  required_providers {
-    random = {
-      source = "hashicorp/random"
-      version = "3.6.0"
-    }
-    aws = {
-     source = "hashicorp/aws"
-     version = "5.30.0"
-    }
-  }
-  cloud {
-    organization = "terraform-bootcamp-1337"
-
-    workspaces {
-      name = "terra-house-1"
-    }
-  }
-}
-
-provider "aws" {
-  region = "us-east-1"
-}
-
-provider "random" {
-  #https://registry.terraform.io/providers/hashicorp/random/latest/docs
-  # Configuration options
-}
-
 resource "random_string" "bucket_name" {
   # https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
   length = 32
@@ -40,8 +11,9 @@ resource "aws_s3_bucket" "S3-Bucket" {
   # https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html
   bucket = random_string.bucket_name.result
 
+    tags = {
+    UserUuid = var.user_uuid
+  }
+
 }
 
-output "random_bucket_name" {
-  value = random_string.bucket_name.result
-}
