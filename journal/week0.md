@@ -8,13 +8,13 @@
     + [Shebang Considerations](#shebang-considerations)
     + [Execution Considerations](#execution-considerations)
     + [Linux Permissions Considerations](#linux-permissions-considerations)
- - [Gitpod Lifecycle](#gitpod-lifecycle)
- - [Working Env Vars](#working-env-vars)
-   * [env command](#env-command)
-   * [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
-   * [Printing Vars](#printing-vars)
-   * [Scoping of Env Vars](#scoping-of-env-vars)
-   * [Persisting Env Vars in Gitpod](#persisting-env-vars-in-gitpod)
+- [Gitpod Lifecycle](#gitpod-lifecycle)
+- [Working Env Vars](#working-env-vars)
+  * [env command](#env-command)
+  * [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
+  * [Printing Vars](#printing-vars)
+  * [Scoping of Env Vars](#scoping-of-env-vars)
+  * [Persisting Env Vars in Gitpod](#persisting-env-vars-in-gitpod)
 - [AWS CLI Installation](#aws-cli-installation)
 - [Terraform Basics](#terraform-basics)
   * [Terraform Registry](#terraform-registry)
@@ -28,7 +28,7 @@
     + [Terraform Directory](#terraform-directory)
 - [Issues with Terraform Cloud Login and Gitpod Workspace](#issues-with-terraform-cloud-login-and-gitpod-workspace)
 
-### Semantic Versioning
+## Semantic Versioning
 
 This project is going to utilise semantic versioning for its tagging
 [semver.org](https://semver.org/)
@@ -43,14 +43,14 @@ The general format:
 
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format. 
 
-### Install The Terraform CLI
+## Install The Terraform CLI
 
-#### Considerations with the Terraform CLI changes
+### Considerations with the Terraform CLI changes
 The Terraform CLI installation instructions have changed due to gpg keyring changes. Se needed to refer to the latest install instructions via Terraform Documentation and change the scripting for install.
 
 [Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-#### Considerations for Linux Distribution
+### Considerations for Linux Distribution
 
 ```
 $ cat /etc/os-release
@@ -115,15 +115,15 @@ chmod 744 ./bin/install_terraform_cli
 
 https://en.wikipedia.org/wiki/Chmod
 
-### Gitpod Lifecycle
+## Gitpod Lifecycle
 
 We need to be careful when using the Init because it will not rerun if we restart an existing workspace.
 
 https://www.gitpod.io/docs/configure/workspaces/tasks
 
-### Working Env Vars
+## Working Env Vars
 
-#### env command
+### env command
 
 We can list out all Enviroment Variables (Env Vars) using the `env` command
 
@@ -154,13 +154,13 @@ echo $HELLO
 
 We can print an env var using echo eg. `echo $HELLO`
 
-#### Scoping for Env Vars
+### Scoping for Env Vars
 
 When you open up new bash terminals in VSCOde it will not be aware of env vars that you have set in another window.
 
 If you want Env VArs to persist across all future bash terminals that are open you need to set env vars in your bash profile. eg. `.bash_profile`
 
-#### Persisting Env Vars in Gitpod
+### Persisting Env Vars in Gitpod
 
 We can persist env vars into gitpod by storing them in Gitpod Secrets Sttorage.
 
@@ -172,7 +172,7 @@ All future workspaces launched will set the env vars for all bash terminals open
 
 You can also set en vars in the `.gitpod.yml` but this can only contain non-senstive env vars.
 
-### AWS CLI Installation
+## AWS CLI Installation
 
 AWS CLI is installed for the project via the bash script [`./bin/install_aws_cli`](./bin/install_aws_cli)
 
