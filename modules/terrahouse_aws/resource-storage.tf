@@ -30,7 +30,7 @@ resource "aws_s3_object" "index_html" {
   source = "${path.root}${var.index_html_filepath}"
   content_type = "text/html"
 
-  etag = filemd5("${path.root}${var.index_html_filepath}")
+  #etag = filemd5("${path.root}${var.index_html_filepath}")
 }
 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_object
@@ -40,7 +40,7 @@ resource "aws_s3_object" "error_html" {
   source = "${path.root}${var.error_html_filepath}"
   content_type = "text/html"
 
-  etag = filemd5("${path.root}${var.error_html_filepath}")
+ # etag = filemd5("${path.root}${var.error_html_filepath}")
 }
 
 resource "aws_s3_bucket_policy" "bucket_policy" {
